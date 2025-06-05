@@ -1,0 +1,7 @@
+SELECT 
+  c.profile,
+  ROUND(SUM(p.value), 2) AS total_assets
+FROM patrimoni p
+JOIN clients c ON p.client_id = c.client_id
+GROUP BY c.profile
+ORDER BY total_assets DESC;
