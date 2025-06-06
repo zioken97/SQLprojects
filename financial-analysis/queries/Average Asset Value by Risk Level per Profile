@@ -1,0 +1,9 @@
+SELECT 
+  c.profile,
+  a.risk_level,
+  ROUND(AVG(p.value), 2) AS avg_asset_value
+FROM patrimoni p
+JOIN clients c ON p.client_id = c.client_id
+JOIN assets a ON p.asset_id = a.asset_id
+GROUP BY c.profile, a.risk_level
+ORDER BY c.profile, a.risk_level;
