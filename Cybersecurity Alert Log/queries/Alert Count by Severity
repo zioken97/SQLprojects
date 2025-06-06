@@ -1,0 +1,4 @@
+SELECT severity, COUNT(*) AS total
+FROM alerts
+GROUP BY severity
+ORDER BY total DESC;
