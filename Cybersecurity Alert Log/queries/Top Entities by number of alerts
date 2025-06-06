@@ -1,0 +1,6 @@
+SELECT e.name, COUNT(a.alert_id) AS alert_count
+FROM alerts a
+JOIN entities e ON a.entity_id = e.entity_id
+GROUP BY e.name
+ORDER BY alert_count DESC
+LIMIT 5;
