@@ -1,5 +1,0 @@
-SELECT d.device_id, d.hostname, e.name AS assigned_to, da.assigned_on
-FROM devices d
-JOIN device_assignments da ON d.device_id = da.device_id
-JOIN employees e ON da.employee_id = e.employee_id
-WHERE da.returned_on IS NULL;
