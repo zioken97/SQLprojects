@@ -1,0 +1,4 @@
+SELECT *
+FROM alerts
+WHERE severity = 'critical' AND resolved = FALSE
+ORDER BY alert_time DESC;
