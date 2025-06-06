@@ -1,0 +1,3 @@
+UPDATE raw_customers
+SET signup_date = STR_TO_DATE(signup_date, '%m-%d-%Y')
+WHERE signup_date LIKE '%-%-%';
