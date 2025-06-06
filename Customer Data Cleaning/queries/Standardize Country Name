@@ -1,0 +1,3 @@
+UPDATE raw_customers
+SET country = 'United States'
+WHERE country IN ('USA', 'U.S.', 'US');
