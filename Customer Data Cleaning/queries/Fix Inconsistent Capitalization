@@ -1,0 +1,2 @@
+UPDATE raw_customers
+SET name = CONCAT(UCASE(LEFT(name,1)), LCASE(SUBSTRING(name,2)));
