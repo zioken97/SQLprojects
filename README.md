@@ -1,10 +1,7 @@
 # SQLprojects
 my projects with MySQL
 # SQL Sales Analysis Project
-
-This project is intended to demonstrate my foundational SQL skills by analyzing a fictional sales dataset across regions, products, and customers. It covers common business use cases such as but not limited to total revenue analysis, customer value segmentation, and month-over-month growth
 ---
-
 Project Objectives: 
 
 - Calculate total and average sales performance
@@ -12,14 +9,10 @@ Project Objectives:
 - Track monthly order value trends
 - Estimate customer lifetime value (LTV)
 - Calculate monthly growth using CTEs and window functions
-
 ---
-
 Tools used
-
 - SQL (PostgreSQL/MySQL-compatible syntax)
 - GitHub for version control and sharing
-
 ## Project Structure
 
 sql-sales-analysis/
